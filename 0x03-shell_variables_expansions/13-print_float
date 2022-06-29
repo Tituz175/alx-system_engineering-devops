@@ -1,2 +1,2 @@
 #!/bin/bash
-print '%.2\n' $NUM
+echo '%.2\n' $NUM
