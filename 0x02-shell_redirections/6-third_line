@@ -1,2 +1,2 @@
 #!/bin/bash
-less iacta | head 3
+less iacta | head -3
