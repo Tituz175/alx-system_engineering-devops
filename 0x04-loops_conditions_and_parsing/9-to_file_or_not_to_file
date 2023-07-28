@@ -1,0 +1,23 @@
+#!/bin/env bash
+# A Bash script that displays:
+# The content of the current directory
+# In a list format
+# Where only the part of the name after the first dash is displayed (refer to the example)
+
+hidden="school"
+
+if [ -e $hidden ]; then
+    echo "$hidden file exists"
+    if [ -s $hidden ]; then
+        echo "$hidden is not empty"
+    else
+        echo "$hidden is empty"
+    fi
+
+    if [ -f $hidden ]; then
+        echo "$hidden is a regular file"
+    fi
+
+else
+    echo "$hidden file is empty"
+fi
