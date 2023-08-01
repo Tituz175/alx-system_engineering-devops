@@ -30,5 +30,5 @@ if [ -e $hidden ]; then
     fi
 
 else
-    echo "$hidden file does not empty"
+    echo "$hidden file does not exist"
 fi
