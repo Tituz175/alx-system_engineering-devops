@@ -23,7 +23,7 @@ if [ -e $hidden ]; then
             echo "$hidden is a regular file"
         fi
     else
-        echo "$hidden is empty"
+        echo "$hidden file is empty"
         if [ -f $hidden ]; then
             echo "$hidden is a regular file"
         fi
