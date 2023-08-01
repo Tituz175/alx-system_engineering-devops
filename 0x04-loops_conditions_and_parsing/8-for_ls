@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 # A Bash script that displays:
 # The content of the current directory
 # In a list format

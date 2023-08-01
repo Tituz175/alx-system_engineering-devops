@@ -1,4 +1,4 @@
-#!/bin/env bash
+#!/usr/bin/env bash
 #This script is displaying 1 t0 20 times
 
 i=1
