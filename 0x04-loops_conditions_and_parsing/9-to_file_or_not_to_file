@@ -19,14 +19,16 @@ if [ -e $hidden ]; then
     echo "$hidden file exists"
     if [ -s $hidden ]; then
         echo "$hidden is not empty"
+        if [ -f $hidden ]; then
+            echo "$hidden is a regular file"
+        fi
     else
         echo "$hidden is empty"
-    fi
-
-    if [ -f $hidden ]; then
-        echo "$hidden is a regular file"
+        if [ -f $hidden ]; then
+            echo "$hidden is a regular file"
+        fi
     fi
 
 else
-    echo "$hidden file is empty"
+    echo "$hidden file does not empty"
 fi
