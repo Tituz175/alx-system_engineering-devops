@@ -7,7 +7,7 @@
 # Requirements:
 #       You must use the while loop (for and until are forbidden)
 
-while IFS=: read -a;
+while IFS=: read -r f1 f2 f3 f4 f5 f6 f7;
 do 
-echo "${a}"
+echo "${f1} ${f2} ${f3} ${f4} ${f5} ${f6} ${f7}"
 done < /etc/passwd
