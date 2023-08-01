@@ -2,16 +2,19 @@
 
 if [ "$1" == start ];
 then
-./manage_my_process & echo "$!" > /var/run/my_process.pid
-echo "manage_my_process started"
+    ./manage_my_process & 
+    echo "$!" > /var/run/my_process.pid
+    echo "manage_my_process started"
+
 elif [ "$1" == stop ];
 then
-kill $(cat /var/run/my_process.pid)
-rm -r /var/run/my_process.pid
-echo "manage_my_process stopped"
+    kill "$(cat /var/run/my_process.pid)"
+    rm /var/run/my_process.pid
+    echo "manage_my_process stopped"
+
 elif [ "$1" == restart ];
 then
-echo "Restart"
+    echo "Restart"
 else
 echo "Usage: manage_my_process {start|stop|restart}"
 fi
