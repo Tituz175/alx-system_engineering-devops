@@ -2,9 +2,9 @@
 
 if [ "$1" == start ];
 then
-    ./manage_my_process & 
-    echo "$!" > /var/run/my_process.pid
-    echo "manage_my_process started"
+    ./manage_my_process &
+	echo "$!" > /var/run/my_process.pid
+	echo "manage_my_process started"
 
 elif [ "$1" == stop ];
 then
