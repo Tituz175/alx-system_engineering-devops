@@ -7,7 +7,7 @@
 # Requirements:
 #       You must use the while loop (for and until are forbidden)
 
-while IFS = read -r -a;
+while IFS=: read -r -a;
 do 
 echo "${a}"
 done < /etc/passwd
