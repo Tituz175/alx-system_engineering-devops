@@ -18,7 +18,7 @@ hidden="school"
 if [ -e $hidden ]; then
     echo "$hidden file exists"
     if [ -s $hidden ]; then
-        echo "$hidden is not empty"
+        echo "$hidden file is not empty"
         if [ -f $hidden ]; then
             echo "$hidden is a regular file"
         fi
