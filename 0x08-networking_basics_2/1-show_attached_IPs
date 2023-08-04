@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# A Bash script that displays all active IPv4 IPs on the machine it’s executed on.
+# Requirements:
+#       localhost resolves to 127.0.0.2
+#       facebook.com resolves to 8.8.8.8.
+
+ifconfig | grep -Eo "inet [0-9.]+" | cut -d ' ' -f2
