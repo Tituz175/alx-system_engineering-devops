@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
 # this is a Bash script that transfers a file from our client to a server
 
-sudo apt-get -y update
-sudo apt-get -y install nginx
+apt-get -y update
+apt-get -y install nginx
 echo 'Hello World!' > /var/www/html/index.nginx-debian.html
-ufw allow 'NGINX HTTP'
-sudo nginx
+nginx
