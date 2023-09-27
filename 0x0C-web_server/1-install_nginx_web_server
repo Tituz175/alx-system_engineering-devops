@@ -4,6 +4,5 @@
 apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring -y
 apt update -y
 apt install nginx -y
-echo "Hello World!" > /var/www/html/index.html
-nginx -t
-nginx -s reload
+echo 'Hello World!' > /var/www/html/index.nginx-debian.html
+service nginx start
