@@ -6,8 +6,11 @@ apt-get update
 apt-get install -y nginx
 fi
 
-service nginx start
-echo 'Hello World!' > /var/www/html/index.nginx-debian.html
+sudo service nginx start
+
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
+
 redirect_link="server_name _;\n\tlocation \/redirect_me {\n\t\t return 301 https://youtu.be/CmdNJnkR6fw?si=rryJbTXwhdXOsnkS;\n\t}"
-sed -i "s|server_name _;|$redirect_link|" /etc/nginx/sites-enabled/default
-service nginx restart
+sudo sed -i "s|server_name _;|$redirect_link|" /etc/nginx/sites-enabled/default
+
+sudo service nginx reload
