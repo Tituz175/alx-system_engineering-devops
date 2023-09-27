@@ -10,7 +10,7 @@ sudo service nginx start
 
 echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
 
-redirect_link="server_name _;\n\tlocation \/redirect_me {\n\t\t return 301 https://youtu.be/CmdNJnkR6fw?si=rryJbTXwhdXOsnkS;\n\t}"
+redirect_link="server_name _;\n\tlocation \/redirect_me {\n\t\t return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n\t}"
 sudo sed -i "s|server_name _;|$redirect_link|" /etc/nginx/sites-enabled/default
 
 sudo service nginx reload
