@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# this is a Bash script that transfers a file from our client to a server
+# this is a Bash script install nginx
 
 apt-get -y update
 apt-get -y install nginx
