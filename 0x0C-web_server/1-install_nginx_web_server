@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 # this is a Bash script that transfers a file from our client to a server
 
-apt install curl gnupg2 ca-certificates lsb-release ubuntu-keyring -y
 apt update -y
 apt install nginx -y
 echo 'Hello World!' > /var/www/html/index.nginx-debian.html
