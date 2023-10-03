@@ -22,4 +22,3 @@ httphostname="index index.html index.htm index.nginx-debian.html;\n\n\t# Add cus
 sudo sed -i "s|index index.html index.htm index.nginx-debian.html;|$httphostname|" /etc/nginx/sites-enabled/default
 
 sudo service nginx restart
-
