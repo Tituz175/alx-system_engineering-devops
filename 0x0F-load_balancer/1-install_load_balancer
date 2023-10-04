@@ -2,10 +2,9 @@
 # this script install the HAproxy and configure it for two backend servers
 
 # haproxy installation
-sudo apt-get install -y --no-install-recommends software-properties-common
-sudo add-apt-repository -y ppa:vbernat/haproxy-2.8
+sudo apt-get install -y update
 sudo apt-get install -y haproxy
 
 # haproxy configuration
-sudo sh -c 'echo "\nfrontend http_front\n\tbind *:80\n\tstats uri /haproxy?stats\n\tdefault_backend http_rear\n\nbackend http_rear\n\tbalance \troundrobin\n\tserver web-01\t35.175.126.167:80 check\n\tserver web-02\t18.206.197.223:80 check\n" >> /etc/haproxy/haproxy.cfg'
-sudo systemctl restart haproxy
+sudo sh -c 'echo "\nfrontend frontend_server\n\tbind *:80\n\tdefault_backend backend_server\n\nbackend backend_server\n\tbalance \troundrobin\n\tserver 86607-web-01\t35.175.126.167:80 check\n\tserver 86607-web-02\t18.206.197.223:80 check\n" >> /etc/haproxy/haproxy.cfg'
+sudo service restart haproxy
