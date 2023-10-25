@@ -21,6 +21,6 @@ if __name__ == "__main__":
     data_todos = response_todos.json()
     data = [[id, data_details.get('username'), data.get('completed'),
              data.get('title')] for data in data_todos]
-    with open('2.csv', 'w', newline='') as file:
+    with open(f'{id}.csv', 'w', newline='') as file:
         writer = csv.writer(file, quoting=csv.QUOTE_ALL)
         writer.writerows(data)
