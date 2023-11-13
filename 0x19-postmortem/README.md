@@ -2,6 +2,7 @@
 ![](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-sysadmin_devops/294/pQ9YzVY.gif)
 
 ## Issue Summary:
+![](https://smiletutor.sg/wp-content/uploads/2022/08/improve-compre-summary-writing.png)
 - **Duration:** 
   - Start Time: November 12, 2023, 15:30 UTC
   - End Time: November 12, 2023, 18:45 UTC
