@@ -12,7 +12,7 @@
   - Database connection pool exhaustion due to a misconfiguration in the connection pool settings.
 
 ## Timeline:
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fganttpro-blog%2Ftimeline-examples-and-tips-on-how-to-use-them-a1ec2aab9f9a&psig=AOvVaw2K1VsMFc7-h_9HAJigkCSp&ust=1699929046437000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODIp7z3v4IDFQAAAAAdAAAAABAE)
+![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Fganttpro-blog%2Ftimeline-examples-and-tips-on-how-to-use-them-a1ec2aab9f9a&psig=AOvVaw2K1VsMFc7h_9HAJigkCSp&ust=1699929046437000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCODIp7z3v4IDFQAAAAAdAAAAABAE)
 - **15:30 UTC: Issue Detected**
   - Monitoring alerts triggered due to an increase in response times.
 - **15:35 UTC: Issue Identification**
